@@ -8,6 +8,7 @@ import editor from "../../Assets/Projects/Redux.png";
 import chatify from "../../Assets/Projects/zenclass.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/forgot.png";
+import finance from "../../Assets/finance.png"
 
 function Projects() {
   return (
@@ -30,6 +31,17 @@ function Projects() {
               ghLink="https://github.com/SetSat/FrontEnd.git"
               ghLink2="https://github.com/SetSat/BackEnd.git"
               demoLink="https://zenclassbysetsat.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={finance}
+              isBlog={false}
+              title="Wealth Journey(Mern)-Redux"
+              description="Navigate your financial future with Wealth Journey, your personalized guide to managing income, expenses, and achieving financial wellness."
+              ghLink="https://github.com/SetSat/Wealth_Journey_Frontend.git"
+              ghLink2="https://github.com/SetSat/Wealth_Journey_Backend.git"
+              demoLink="https://wealthjourneybysetsat.netlify.app/"
             />
           </Col>
 

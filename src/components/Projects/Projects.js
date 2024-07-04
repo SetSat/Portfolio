@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/crud.PNG";
-import emotion from "../../Assets/Projects/emotion.png";
+import leaf from "../../Assets/Projects/product.png";
+
 import editor from "../../Assets/Projects/Redux.png";
 import chatify from "../../Assets/Projects/zenclass.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/forgot.png";
+
+import bitsOfCode from "../../Assets/Projects/googleouth.png";
 import finance from "../../Assets/finance.png"
 
 function Projects() {
@@ -49,11 +49,22 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Email OTP Password Reset"
-              description="Implemented a robust password reset feature that enhances security by sending an OTP to the user's email. This ensures a safe and efficient process for users to reset their passwords."
-              ghLink="https://github.com/SetSat/Password-Frontend.git"
-              ghLink2="https://github.com/SetSat/Password-Backend.git"
-              demoLink="https://passwordresetbysathish.netlify.app/"
+              title="Secure React Authentication System with Google OAuth, OTP Verification, and Redux Toolkit"
+              description="A secure React-based MERN stack authentication system featuring OTP-based signup and password reset, sleek UI with Google OAuth, Redux Toolkit for state management, and Ant Design for polished UX."
+              ghLink="https://github.com/SetSat/Login-Clint.git"
+              ghLink2="https://github.com/SetSat/Login-Server.git"
+              demoLink="https://googleauthbysetsat.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={leaf}
+              isBlog={false}
+              title="Product Management System with Enhanced Authentication and Redux Toolkit Integration using MERN Stack"
+              description="Developed a robust Product Management System using the MERN stack, featuring enhanced authentication capabilities including OTP-based signup and password reset. Implemented Redux Toolkit for efficient state management, allowing users to seamlessly add, view, update, and delete products with details like name, price, and barcode in a user-friendly, responsive design"
+              ghLink="https://github.com/SetSat/Product_management_system-frontend.git"
+              ghLink2="https://github.com/SetSat/Product-Management-Backend.git"
+              demoLink="https://productmanagementbysetsat.netlify.app/"
             />
           </Col>
 
@@ -68,17 +79,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Product Management System using MERN Stack"
-              description="Developed a robust Product Management System using the MERN stack, enabling users to add, view, update, and delete products with details like name, price, and barcode. Ensured seamless frontend-backend interaction and a user-friendly, responsive design."
-              ghLink="https://github.com/SetSat/Product_management_system-frontend.git"
-              ghLink2="https://github.com/SetSat/Product-Management-Backend.git"
-              demoLink="https://productmanagementbysetsat.netlify.app/"
-            />
-          </Col>
+
 
 
         </Row>
